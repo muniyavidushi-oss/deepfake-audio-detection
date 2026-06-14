@@ -3,7 +3,7 @@
 Classify a speech recording as **Genuine (Human)** or **Deepfake (AI-Generated)**
 using classic audio features (librosa) and a compact Keras MLP.
 
-**Live demo:** _add your Streamlit URL here after deploying_
+**Live demo:** https://deepfake-audio-detection-jsdbhghef6utxtrhxmw4tf.streamlit.app/#b2057d24
 **Labels:** `real = 0` (Genuine), `fake = 1` (Deepfake)
 
 ## Dataset & Preprocessing
