@@ -6,6 +6,18 @@ using classic audio features (librosa) and a compact Keras MLP.
 **Live demo:** https://deepfake-audio-detection-jsdbhghef6utxtrhxmw4tf.streamlit.app/#b2057d24
 **Labels:** `real = 0` (Genuine), `fake = 1` (Deepfake)
 
+##  Deliverables — where to find each one
+
+| Required deliverable | Where it is |
+|---|---|
+| 1. ipynb notebook with full running code | [`notebook.ipynb`](notebook.ipynb) |
+| 2. Trained model | `deepfake_model.keras` (+ `.h5` / `.weights.h5`), `scaler.pkl`, `threshold.json` |
+| 3. Python script to test new audio samples | [`predict.py`](predict.py) — run `python predict.py your_clip.wav` |
+| 4. Performance report (accuracy, EER, F1, confusion matrix) | See the **Results** section below |
+| 5. Preprocessing, feature extraction & model architecture | See the **Dataset & Preprocessing**, **Feature Extraction**, and **Model** sections below |
+| 6. Clear, detailed README | This file |
+| Bonus: live web app | [Open the Streamlit app](PASTE-YOUR-URL-HERE) |
+
 ## Dataset & Preprocessing
 - **Fake-or-Real (FoR)** dataset, **for-norm** (normalized) variant.
 - Structure: `for-norm/{training,testing,validation}/{real,fake}/*.wav`
@@ -52,11 +64,11 @@ the app and CLI.
 
 | Metric | Target | Achieved | Status |
 |---|---|---|---|
-| Accuracy | ≥ 80% | **88.78%** | ✅ |
-| EER | ≤ 12% | **11.22%** | ✅ |
-| F1 score | ≥ 80% | **89.01%** | ✅ |
-| Per-class accuracy (real) | ≥ 75% | **88.74%** | ✅ |
-| Per-class accuracy (fake) | ≥ 75% | **88.82%** | ✅ |
+| Accuracy | ≥ 80% | **88.78%** |  
+| EER | ≤ 12% | **11.22%** |  
+| F1 score | ≥ 80% | **89.01%** |  
+| Per-class accuracy (real) | ≥ 75% | **88.74%** |  
+| Per-class accuracy (fake) | ≥ 75% | **88.82%** | 
 
 Confusion matrix (at the EER cutoff):
 
