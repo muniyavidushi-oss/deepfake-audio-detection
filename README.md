@@ -15,8 +15,6 @@ using classic audio features (librosa) and a compact Keras MLP.
 | 3. Python script to test new audio samples | [`predict.py`](predict.py) — run `python predict.py your_clip.wav` |
 | 4. Performance report (accuracy, EER, F1, confusion matrix) | See the **Results** section below |
 | 5. Preprocessing, feature extraction & model architecture | See the **Dataset & Preprocessing**, **Feature Extraction**, and **Model** sections below |
-| 6. Clear, detailed README | This file |
-| Bonus: live web app | [Open the Streamlit app](PASTE-YOUR-URL-HERE) |
 
 ## Dataset & Preprocessing
 - **Fake-or-Real (FoR)** dataset, **for-norm** (normalized) variant.
